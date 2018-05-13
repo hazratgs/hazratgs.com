@@ -1,0 +1,1 @@
+export const ASIDE_TOGGLE = 'ASIDE_TOGGLE'
