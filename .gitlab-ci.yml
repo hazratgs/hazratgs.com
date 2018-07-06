@@ -16,7 +16,8 @@ build:
     - build/
 deploy:
   stage: deploy
-  script:
+  before_script:
   - mkdir ~/.ssh && chmod 700 ~/.ssh
-  - cd ~/.ssh && touch server && chmod 600 server && echo $KEY >> server
+  - cd ~/.ssh && touch server && chmod 600 server && echo "$KEY" >> server
+  script:
   - scp -vrp -o stricthostkeychecking=no -P $PORT -i ~/.ssh/server build/* $USER@$HOST:/var/www/hazratgs.com
