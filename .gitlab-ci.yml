@@ -19,4 +19,4 @@ deploy:
   script:
   - mkdir ~/.ssh && chmod 700 ~/.ssh
   - cd ~/.ssh && touch server && chmod 600 server && echo $KEY >> server
-  - ssh -oStrictHostKeyChecking=no -P $PORT -r -i ~/.ssh/server $USER@$HOST
+  - ssh -oStrictHostKeyChecking=no -P $PORT -i ~/.ssh/server $USER@$HOST
