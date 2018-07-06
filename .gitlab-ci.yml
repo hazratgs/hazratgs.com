@@ -1,16 +1,6 @@
 image: node:latest
 stages:
-  - build
   - deploy
-build:
-  stage: build
-  script:
-  - npm i
-  - npm run build
-  artifacts:
-    paths:
-    - node_modules/
-    - build/
 deploy:
   stage: deploy
   before_script:
@@ -21,4 +11,6 @@ deploy:
   - chmod 600 server
   - echo "$KEY" >> server
   script:
+  - npm i
+  - npm run build
   - scp -vrp -o stricthostkeychecking=no -P $PORT -i ~/.ssh/server build/* $USER@$HOST:/var/www/hazratgs.com
