@@ -19,4 +19,5 @@ deploy:
   script:
   - mkdir ~/.ssh && chmod 700 ~/.ssh
   - cd ~/.ssh && touch server && chmod 600 server && echo $KEY >> server
+  - cd ~/.ssh && ls -la
   - scp -v -r -oStrictHostKeyChecking=no -P $PORT -i ~/.ssh/server build/* $USER@$HOST:/var/www/hazratgs.com
