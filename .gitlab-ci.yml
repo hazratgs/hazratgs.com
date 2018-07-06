@@ -5,10 +5,11 @@ stages:
 cache:
   paths:
   - node_modules/
-install_dependencies:
+build:
   stage: build
   script:
   - npm i
+  - npm run build
   artifacts:
     paths:
     - node_modules/
