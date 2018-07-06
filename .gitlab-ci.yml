@@ -24,4 +24,4 @@ deploy:
   - chmod 600 ~/.ssh/server
   - echo "$KEY" >> ~/.ssh/server
   script:
-  - scp -vrp -o stricthostkeychecking=no -P $PORT -i ~/.ssh/server build/* $USER@$HOST:/var/www/hazratgs.com
+  - scp -rp -o stricthostkeychecking=no -P $PORT -i ~/.ssh/server build/* $USER@$HOST:/var/www/hazratgs.com
