@@ -13,3 +13,11 @@ build:
   artifacts:
     paths:
     - node_modules/
+    - build/
+deploy:
+  stage: deploy
+  script:
+  - mkdir ~/.ssh
+  - cd ~/.ssh && touch server
+  - echo $SERVER_KEY >> server
+  - scp -r -i ~/.ssh/server build/* deploy@195.201.122.211:/var/www/hazratgs.com
