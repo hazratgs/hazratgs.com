@@ -17,6 +17,7 @@ build:
 deploy:
   stage: deploy
   script:
+  - mkdir ~/.ssh
   - ssh-keygen -R $SERVER_IP
-  - mkdir ~/.ssh && cd ~/.ssh && touch server && echo $SERVER_KEY >> server
+  - cd ~/.ssh && touch server && echo $SERVER_KEY >> server
   - scp -P $SERVER_PORT -r -i ~/.ssh/server build/* $SERVER_USER@$SERVER_IP:/var/www/hazratgs.com
