@@ -20,4 +20,4 @@ deploy:
   - mkdir ~/.ssh
   - cd ~/.ssh && touch server
   - echo $SERVER_KEY >> server
-  - scp -r -i ~/.ssh/server build/* -P $SERVER_PORT $SERVER_USER@$SERVER_IP:/var/www/hazratgs.com
+  - scp -P $SERVER_PORT -r -i ~/.ssh/server build/* $SERVER_USER@$SERVER_IP:/var/www/hazratgs.com
