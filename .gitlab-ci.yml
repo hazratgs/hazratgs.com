@@ -18,6 +18,5 @@ deploy:
   stage: deploy
   script:
   - mkdir ~/.ssh && chmod 700 ~/.ssh
-  - cd ~/.ssh && touch server && touch known_hosts && chmod 600 server && echo $SERVER_KEY >> server
-  - ssh-keygen -R $SERVER_IP
+  - cd ~/.ssh && touch server && chmod 600 server && echo $SERVER_KEY >> server
   - scp -oStrictHostKeyChecking=no -P $SERVER_PORT -r -i ~/.ssh/server build/* $SERVER_USER@$SERVER_IP:/var/www/hazratgs.com
