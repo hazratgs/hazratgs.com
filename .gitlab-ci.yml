@@ -17,6 +17,8 @@ build:
     - build/
 deploy:
   stage: deploy
+  environment: production
+  only: master
   before_script:
   - mkdir ~/.ssh
   - chmod 700 ~/.ssh
