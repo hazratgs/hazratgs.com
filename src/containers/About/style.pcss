@@ -105,3 +105,41 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .about {
+    width: 100%;
+    padding: 0 15px;
+
+    .wrapper {
+      padding-top: 0;
+
+      h1 {
+        font-size: 29px;
+        margin: 5px 0;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 24px;
+      }
+
+      ul {
+        margin: 10px 0 10px 30px;
+
+        li {
+          &:after {
+            position: absolute;
+            left: -30px;
+            top: 10px;
+            content: '';
+            background-color: #000;
+            opacity: 0.15;
+            width: 15px;
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}
