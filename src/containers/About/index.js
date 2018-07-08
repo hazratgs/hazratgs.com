@@ -68,9 +68,44 @@ export default class About extends PureComponent {
               <img src='/svg/styled-components.png'/>
               <span>Styled components</span>
             </div>
+          </div>
+          <p>А так же часто использую в работе:</p>
+          <div styleName='number'>
+            <div styleName='item'>
+              <img src='/svg/nodejs.svg'/>
+              <span>Node.js</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/mongodb.svg'/>
+              <span>MongoDB</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/gitlab.svg'/>
+              <span>GitLab</span>
+            </div>
             <div styleName='item'>
               <img src='/svg/docker.svg'/>
               <span>Docker</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/linux.svg'/>
+              <span>Linux</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/nginx.svg'/>
+              <span>Nginx</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/chai.svg'/>
+              <span>Chai & Mocha</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/mysql.svg'/>
+              <span>MySQL</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/php.svg'/>
+              <span>PHP</span>
             </div>
           </div>
           <ul>
