@@ -5,6 +5,8 @@ import s from './style.pcss'
 import Header from '../Header'
 import Footer from '../Footer'
 import About from '../About'
+import Work from '../Work'
+import Tools from '../Tools'
 
 @withRouter
 export default class App extends PureComponent {
@@ -14,6 +16,8 @@ export default class App extends PureComponent {
         <Header/>
         <div className={s.content}>
           <Route exact path='/' component={About}/>
+          <Route path='/work' component={Work}/>
+          <Route path='/tools' component={Tools}/>
         </div>
         <Footer/>
       </div>

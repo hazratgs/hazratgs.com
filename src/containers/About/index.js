@@ -68,6 +68,10 @@ export default class About extends PureComponent {
               <img src='/svg/styled-components.png'/>
               <span>Styled components</span>
             </div>
+            <div styleName='item'>
+              <img src='/svg/docker.svg'/>
+              <span>Docker</span>
+            </div>
           </div>
           <ul>
             <li><p>Опыт проектирования и разработки Single Page Applications (SPA)</p></li>
