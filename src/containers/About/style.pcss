@@ -6,16 +6,6 @@
   background-color: #fff;
   transition: background-color .3s ease;
 
-  &.black {
-    background-color: var(--background);
-
-    .wrapper {
-      h1, p {
-        color: #fff;
-      }
-    }
-  }
-
   .wrapper {
     padding-top: 160px;
     opacity: 1;
@@ -36,18 +26,19 @@
 
     p {
       max-width: 740px;
-      color: #fff;
+      color: #000;
       font-size: 18px;
       line-height: 28px;
       min-height: 20px;
       font-family: 'gerbera';
       font-weight: 300;
-      max-width: 740px;
 
       a {
         text-decoration: none;
-        border-bottom: 1px solid;
-        color: #fff;
+        border-bottom: 2px solid;
+        color: #005ea5;
+        padding: 0;
+        display: inline;
       }
     }
 
@@ -64,7 +55,7 @@
           left: -50px;
           top: 13px;
           content: '';
-          background-color: #fff;
+          background-color: #000;
           opacity: 0.15;
           width: 25px;
           height: 1px;
@@ -73,7 +64,7 @@
     }
 
     .number {
-      padding: 40px 0 15px 60px;
+      padding: 10px 0 0 0px;
       box-sizing: border-box;
       display: flex;
       max-width: 880px;
@@ -81,15 +72,13 @@
 
       .item {
         margin-bottom: 50px;
-        width: 205px;
+        width: 80px;
 
         svg, img {
-          height: 48px;
+          height: 24px;
+          margin: auto;
           margin-bottom: 10px;
-
-          * {
-            fill: #fff!important;
-          }
+          display: block;
         }
 
         strong {
@@ -99,15 +88,18 @@
           font-size: 42px;
           line-height: 48px;
           margin-bottom: 3px;
-          color: #fff;
+          color: #000;
         }
 
         span {
-          font-family: 'gerbera';
-          color: rgba(255, 255, 255, 0.6);
+          font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;
           font-weight: 300;
-          font-size: 13px;
+          font-size: 11px;
           display: block;
+          text-align: center;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
         }
       }
     }

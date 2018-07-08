@@ -45,8 +45,28 @@ export default class About extends PureComponent {
               <span>Redux</span>
             </div>
             <div styleName='item'>
+              <img src='/svg/typescript.svg'/>
+              <span>TypeScript</span>
+            </div>
+            <div styleName='item'>
               <img src='/svg/webpack-icon.svg'/>
               <span>Webpack</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/eslint.svg'/>
+              <span>ESLint</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/jest.svg'/>
+              <span>Jest</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/postcss.svg'/>
+              <span>PostCSS</span>
+            </div>
+            <div styleName='item'>
+              <img src='/svg/styled-components.png'/>
+              <span>Styled components</span>
             </div>
           </div>
           <ul>
