@@ -20,9 +20,18 @@ export default class Header extends PureComponent {
         </div>
         <nav styleName='nav'>
           <NavLink exact to='/' activeClassName={s.active}>Обо мне</NavLink>
-          <NavLink to='/tools' activeClassName={s.active}>Инструменты</NavLink>
           <NavLink to='/work' activeClassName={s.active}>Работы</NavLink>
-          <a target='_blank' href='https://habr.com/users/hazratgs/posts/'>Публикации</a>
+          <a
+            target='_blank'
+            href='https://habr.com/users/hazratgs/posts/'
+            styleName='habr'
+          >
+            Публикации <i>2</i>
+          </a>
+          <a target='_blank' href='https://github.com/hazratgs'>
+            <img src='/svg/github.svg'/>
+            <span>GitHub</span>
+          </a>
         </nav>
       </header>
     )

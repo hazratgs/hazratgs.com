@@ -2,7 +2,7 @@
 
 .header {
   @apply --width;
-  padding-top: 20px;
+  padding-top: 40px;
 
   .user {
     display: flex;
@@ -47,18 +47,52 @@
     a {
       display: inline-block;
       color: #005ea5;
-      margin-right: 15px;
+      margin-right: 20px;
       font-family: 'gerbera';
       font-size: 16px;
       font-weight: 300;
+      text-decoration: none;
+      display: flex;
+      position: relative;
 
       &:hover {
-        opacity: .8;
+        text-decoration: underline;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        position: relative;
+        top: -1px;
+      }
+
+      &.habr {
+        margin-right: 30px;
+      }
+
+      i {
+        font-style: normal;
+        color: #999;
+        font-weight: 300;
+        font-size: 9px;
+        background-color: #0479cc;
+        color: #fff;
+        position: absolute;
+        right: -14px;
+        top: -5px;
+        border-radius: 100%;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        justify-content: center;
+        line-height: 16px;
       }
 
       &.active {
         color: #999;
         text-decoration: none;
+        cursor: default;
       }
     }
   }
