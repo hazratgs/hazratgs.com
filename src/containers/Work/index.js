@@ -8,18 +8,41 @@ import s from './style.pcss'
 @connect(state => ({ items: state.App.works }))
 @CSSModules(s)
 export default class Work extends PureComponent {
+  constructor (props) {
+    super(props)
+    this.year = null
+  }
+
   render () {
-    const items = this.props.items.map((item, i) =>
-      <div key={i} styleName='item'>
-        <div styleName='favicon'>
-          <img src={item.favicon} />
-        </div>
-        <div styleName='data'>
-          <a target='_blank' href={item.url}>{item.title}</a>
-          <p>{item.description}</p>
-        </div>
-      </div>
-    )
+    const sort = [...this.props.items]
+      .filter(item => item.type === this.props.match.params.type)
+      .map((item, i) => ({ id: i, ...item }))
+      .sort((a, b) => a.year >= b.year ? -1 : 1)
+      .sort((a, b) => a.id <= b.id ? -1 : 1)
+    const items = sort.map((item, i) => {
+      let year = null
+      if (!this.year) {
+        year = <div styleName='year'>{item.year}</div>
+        this.year = item.year
+      }
+      if (this.year !== item.year) {
+        year = <div styleName='year'>{item.year}</div>
+        this.year = item.year
+      }
+      return (
+        <div key={i}>
+          {year}
+          <div styleName='item'>
+            <div styleName='favicon'>
+              <img src={item.favicon} />
+            </div>
+            <div styleName='data'>
+              <a target='_blank' href={item.url}>{item.title}</a>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        </div>)
+    })
 
     return (
       <div styleName='work'>
@@ -34,11 +57,10 @@ export default class Work extends PureComponent {
             to='/work/personal'
             activeClassName={s.active}
           >
-            <span>Личные</span>
+            <span>Личные проекты</span>
           </NavLink>
         </div>
         <div styleName='items'>
-          <div styleName='year'>2018</div>
           {items}
         </div>
       </div>

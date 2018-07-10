@@ -3,6 +3,7 @@ import { } from '../constants/App'
 const initialState = {
   works: [
     {
+      'type': 'commercial',
       'title': 'Crypterium',
       'description': 'Pay with crypto anywhere in the world',
       'url': 'https://crypterium.com/',
@@ -10,13 +11,7 @@ const initialState = {
       'year': 2018
     },
     {
-      'title': 'Банки.ру',
-      'description': 'Бонусный клуб Банки.ру',
-      'url': 'http://www.banki.ru/bonus/',
-      'favicon': 'http://www.banki.ru/favicon.ico',
-      'year': 2018
-    },
-    {
+      'type': 'commercial',
       'title': 'Cosmopolitan',
       'description': 'СosmoShop — сервис экономии на покупках',
       'url': 'https://www.cosmo.ru/cosmoshop/',
@@ -24,6 +19,7 @@ const initialState = {
       'year': 2018
     },
     {
+      'type': 'commercial',
       'title': 'Сахар',
       'description': 'Единая бонусная карта',
       'url': 'https://saharcard.ru',
@@ -31,6 +27,7 @@ const initialState = {
       'year': 2018
     },
     {
+      'type': 'commercial',
       'title': 'THT-CLUB',
       'description': 'Программа лояльности THT-CLUB',
       'url': 'https://play.google.com/store/apps/details?id=com.finchmil.thtclub',
@@ -38,6 +35,15 @@ const initialState = {
       'year': 2018
     },
     {
+      'type': 'commercial',
+      'title': 'Банки.ру',
+      'description': 'Бонусный клуб Банки.ру',
+      'url': 'http://www.banki.ru/bonus/',
+      'favicon': 'http://www.banki.ru/favicon.ico',
+      'year': 2017
+    },
+    {
+      'type': 'commercial',
       'title': 'Workle',
       'description': 'Бонусный клуб Workle',
       'url': 'https://www.workle.ru/promopage/workle-bonus/',
@@ -45,6 +51,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Комсомольская правда',
       'description': 'Бонусный клуб',
       'url': 'https://www.kp.ru/best/msk/bonus-club/',
@@ -52,6 +59,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'LiveLib',
       'description': 'Бутик LiveLib',
       'url': 'https://www.livelib.ru/special/bonus',
@@ -59,6 +67,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'BitCoen Loyalty',
       'description': 'BitCoen Loyalty is a unique loyalty program created within the framework of the BitCoen project ecosystem.',
       'url': 'http://loyalty.bitcoen.io/mainpage/partners',
@@ -66,6 +75,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Дневник.Бонус',
       'description': 'Программа лояльности специально для пользователей Дневник.ру',
       'url': 'https://ad.dnevnik.ru/promo/bonus',
@@ -73,6 +83,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Лайфхакер',
       'description': 'Кэшбэк сервис Лайфхакера',
       'url': 'https://lifehacker.ru/cashback/',
@@ -80,6 +91,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Monte-Carlo',
       'description': 'Служба доставки еды',
       'url': 'http://monte05.ru/',
@@ -87,6 +99,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Доктор Плюс',
       'description': 'Медицинский центр',
       'url': 'http://doctorplus05.ru/',
@@ -94,6 +107,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Дербентский район',
       'description': 'Официальный сайт Администрации Дербентского района',
       'url': 'https://derbrayon.ru/',
@@ -101,6 +115,7 @@ const initialState = {
       'year': 2017
     },
     {
+      'type': 'commercial',
       'title': 'Рандеву',
       'description': 'Служба доставки еды',
       'url': 'https://randevu05.ru/',
@@ -108,6 +123,7 @@ const initialState = {
       'year': 2016
     },
     {
+      'type': 'commercial',
       'title': 'Меридан',
       'description': 'Интернет-магазин цифровой техники',
       'url': 'https://meridian05.ru/',
@@ -115,6 +131,7 @@ const initialState = {
       'year': 2016
     },
     {
+      'type': 'commercial',
       'title': 'MMA-TODAY',
       'description': 'Новостной сайт о смешаных единоборствах',
       'url': 'https://mma-today.ru/',
@@ -122,6 +139,7 @@ const initialState = {
       'year': 2016
     },
     {
+      'type': 'commercial',
       'title': 'Гарантъ-Строй',
       'description': 'Сайт объекта «Цитадель»',
       'url': 'http://garantstroy05.ru/',
@@ -129,6 +147,7 @@ const initialState = {
       'year': 2016
     },
     {
+      'type': 'commercial',
       'title': 'Ориент',
       'description': 'Мебельные решения',
       'url': 'https://orientmebel.ru/',
@@ -136,11 +155,36 @@ const initialState = {
       'year': 2016
     },
     {
+      'type': 'commercial',
       'title': 'Febox',
       'description': 'Веб-студия дизайна',
       'url': 'https://febox.ru/',
       'favicon': 'https://febox.ru/public/img/favicon.png',
       'year': 2016
+    },
+    {
+      'type': 'personal',
+      'title': 'instalator-telegram',
+      'description': 'Telegram Bot для автоматизации массфаловинга и управления Instagram аккаунтами',
+      'url': 'https://github.com/hazratgs/instalator-telegram',
+      'favicon': 'https://assets-cdn.github.com/favicon.ico',
+      'year': 2018
+    },
+    {
+      'type': 'personal',
+      'title': 'online-storage',
+      'description': '⚡️Online implementation of localStorage',
+      'url': 'https://github.com/hazratgs/online-storage',
+      'favicon': 'https://assets-cdn.github.com/favicon.ico',
+      'year': 2018
+    },
+    {
+      'type': 'personal',
+      'title': 'crypto-trading-bot',
+      'description': '🤖 Трейдинг бот одновременно работающий с несколькими биржами',
+      'url': 'https://github.com/hazratgs/crypto-trading-bot',
+      'favicon': 'https://assets-cdn.github.com/favicon.ico',
+      'year': 2017
     }
   ]
 }

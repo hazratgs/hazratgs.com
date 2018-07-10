@@ -16,7 +16,7 @@ export default class App extends PureComponent {
         <Header/>
         <div className={s.content}>
           <Route exact path='/' component={About}/>
-          <Route path='/work' component={Work}/>
+          <Route path='/work/:type' component={Work}/>
           <Route path='/tools' component={Tools}/>
         </div>
         <Footer/>
