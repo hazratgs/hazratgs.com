@@ -110,16 +110,14 @@ export default class About extends PureComponent {
           </div>
           <ul>
             <li><p>Опыт проектирования и разработки Single Page Applications (SPA)</p></li>
-            <li><p>Имею представление о блокчейне Ethereum, создавал токен на основе ERC20, а так же использовал Truffle</p></li>
+            <li><p>Имею представление о блокчейне Ethereum, создавал токен на основе ERC20, Truffle</p></li>
             <li><p>Опыт кроссбраузерной и адаптивной верстки</p></li>
-            <li><p>Умение настроить CI/CD в Gitlab для выкладки, выкладка статики на AWS</p></li>
-            <li><p>Преждевременная оптимизация зло!</p></li>
+            <li><p>Gitlab CI/CD</p></li>
             <li><p>Смотрю в сторону функционального программирования</p></li>
-            <li><p>Представление о React-Native, в свободное время веду разработку приложения (https://github.com/hazratgs/MMATODAY)</p></li>
+            <li><p>Представление о React-Native, в свободное время веду <a target='_blank' href='https://github.com/hazratgs/MMATODAY'>разработку приложения</a></p></li>
             <li><p>Люблю красивый дизайн, особенно его верстать, раскладывая все по принципам React, каждую кнопочку в свою папочку)</p></li>
-            <li><p>В своих проектах использую styled-components, в react-native она идеально подходит</p></li>
-            <li><p>Очень слабый опыт написания тестов, надеюсь на новом месте работы будет принято писать тесты к своему коду</p></li>
-            <li><p>Работаю на <a href="#">MacBook Pro 13</a></p></li>
+            <li><p>В своих проектах использую styled-components</p></li>
+            <li><p>Работаю на MacBook Pro 13</p></li>
             <li><p>Часовой пояс GMT+0300 (MSK)</p></li>
           </ul>
           <br/>
