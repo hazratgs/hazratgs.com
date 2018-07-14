@@ -104,7 +104,7 @@ const initialState = {
       'description': 'Медицинский центр',
       'url': 'http://doctorplus05.ru/',
       'favicon': 'http://doctorplus05.ru/public/img/favicon.png',
-      'year': 2017
+      'year': 2016
     },
     {
       'type': 'commercial',
@@ -112,7 +112,7 @@ const initialState = {
       'description': 'Официальный сайт Администрации Дербентского района',
       'url': 'https://derbrayon.ru/',
       'favicon': 'https://derbrayon.ru/public/img/favicon.png',
-      'year': 2017
+      'year': 2016
     },
     {
       'type': 'commercial',
@@ -140,11 +140,19 @@ const initialState = {
     },
     {
       'type': 'commercial',
-      'title': 'Гарантъ-Строй',
-      'description': 'Сайт объекта «Цитадель»',
-      'url': 'http://garantstroy05.ru/',
-      'favicon': 'http://garantstroy05.ru/public/img/favicon.png',
-      'year': 2016
+      'title': '100 квадратов',
+      'description': 'Агенство недвижимости',
+      'url': 'http://stokvadratov.febox.ru/',
+      'favicon': 'http://stokvadratov.febox.ru/public/img/favicon.png',
+      'year': 2015
+    },
+    {
+      'type': 'commercial',
+      'title': 'Masspit',
+      'description': 'Интернет-магазин спортивного питания',
+      'url': 'http://masspit.febox.ru/',
+      'favicon': 'http://masspit.febox.ru/public/img/favicon.png',
+      'year': 2015
     },
     {
       'type': 'commercial',
@@ -152,7 +160,23 @@ const initialState = {
       'description': 'Мебельные решения',
       'url': 'https://orientmebel.ru/',
       'favicon': 'https://orientmebel.ru/static/img/favicon.png',
-      'year': 2016
+      'year': 2015
+    },
+    {
+      'type': 'commercial',
+      'title': 'Первый',
+      'description': 'Строительная компания',
+      'url': 'http://perviy.febox.ru/',
+      'favicon': 'http://perviy.febox.ru/public/img/favicon.png',
+      'year': 2015
+    },
+    {
+      'type': 'commercial',
+      'title': 'Гарантъ-Строй',
+      'description': 'Сайт объекта «Цитадель»',
+      'url': 'http://garantstroy05.ru/',
+      'favicon': 'http://garantstroy05.ru/public/img/favicon.png',
+      'year': 2015
     },
     {
       'type': 'commercial',
@@ -160,7 +184,55 @@ const initialState = {
       'description': 'Веб-студия дизайна',
       'url': 'https://febox.ru/',
       'favicon': 'https://febox.ru/public/img/favicon.png',
-      'year': 2016
+      'year': 2014
+    },
+    {
+      'type': 'commercial',
+      'title': 'АПЮД',
+      'description': 'Ассоциация предпринимателей',
+      'url': 'http://apyd.ru/',
+      'favicon': 'http://apyd.ru/public/images/favicon.png',
+      'year': 2014
+    },
+    {
+      'type': 'commercial',
+      'title': 'Турлифт',
+      'description': 'Лифтовое оборудование',
+      'url': 'http://turlift.ru/',
+      'favicon': 'hhttp://turlift.ru/img/favicon.png',
+      'year': 2014
+    },
+    {
+      'type': 'commercial',
+      'title': 'Строймаркет',
+      'description': 'Каталог компании',
+      'url': 'http://stroymarketrd.ru/',
+      'favicon': 'https://stroymarketrd.ru/public/img/favicon.png',
+      'year': 2014
+    },
+    {
+      'type': 'commercial',
+      'title': 'Советсткое',
+      'description': 'Администрация поселения',
+      'url': 'http://sovetskoeselo.ru/',
+      'favicon': 'http://sovetskoeselo.ru/public/img/favicon.png',
+      'year': 2014
+    },
+    {
+      'type': 'commercial',
+      'title': 'Цмурский',
+      'description': 'Администрация поселения',
+      'url': 'http://cmur.ru/',
+      'favicon': 'http://cmur.ru/public/images/favicon.png',
+      'year': 2014
+    },
+    {
+      'type': 'commercial',
+      'title': 'Люстермаркет',
+      'description': 'Интернет-магазин',
+      'url': 'http://lustermarket.febox.ru/',
+      'favicon': 'http://lustermarket.febox.ru/public/img/favicon.png',
+      'year': 2014
     },
     {
       'type': 'personal',
