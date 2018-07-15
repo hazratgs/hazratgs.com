@@ -113,6 +113,7 @@ export default class About extends PureComponent {
             <li><p>Имею представление о блокчейне Ethereum, создавал токен на основе ERC20, Truffle</p></li>
             <li><p>Опыт кроссбраузерной и адаптивной верстки</p></li>
             <li><p>Gitlab CI/CD</p></li>
+            <li><p>Git Flow</p></li>
             <li><p>Смотрю в сторону функционального программирования</p></li>
             <li><p>Представление о React-Native, в свободное время веду <a target='_blank' href='https://github.com/hazratgs/MMATODAY'>разработку приложения</a></p></li>
             <li><p>Люблю красивый дизайн, особенно его верстать, раскладывая все по принципам React, каждую кнопочку в свою папочку)</p></li>
