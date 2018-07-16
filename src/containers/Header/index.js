@@ -15,7 +15,7 @@ export default class Header extends PureComponent {
           </div>
           <div styleName='data'>
             <h1>Хазрат Гаджикеримов</h1>
-            <p>Senior JavaScript Developer</p>
+            <p>JavaScript Developer</p>
           </div>
         </div>
         <nav styleName='nav'>
