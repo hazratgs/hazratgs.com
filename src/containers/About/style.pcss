@@ -33,32 +33,42 @@
       font-family: 'gerbera';
       font-weight: 300;
 
+      &.small {
+        font-size: 16px;
+        color: #000;
+        line-height: 18px;
+        min-height: 20px;
+        margin: 15px 0;
+      }
+
       a {
         text-decoration: none;
-        border-bottom: 2px solid;
         color: #005ea5;
         padding: 0;
         display: inline;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
     ul {
-      margin: 20px 0 20px 50px;
+      margin: 20px 0 20px 0;
       padding: 0;
 
       li {
         list-style: none;
         position: relative;
 
-        &:after {
-          position: absolute;
-          left: -50px;
-          top: 13px;
-          content: '';
-          background-color: #000;
-          opacity: 0.15;
-          width: 25px;
-          height: 1px;
+        p {
+          font-size: 16px;
+          color: #000;
+          line-height: 18px;
+          min-height: 20px;
+          font-family: 'gerbera';
+          font-weight: 300;
+          margin: 15px 0;
         }
       }
     }

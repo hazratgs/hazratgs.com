@@ -7,6 +7,7 @@ import Footer from '../Footer'
 import About from '../About'
 import Work from '../Work'
 import Tools from '../Tools'
+import Books from '../Books'
 
 @withRouter
 export default class App extends PureComponent {
@@ -18,6 +19,7 @@ export default class App extends PureComponent {
           <Route exact path='/' component={About}/>
           <Route path='/work/:type' component={Work}/>
           <Route path='/tools' component={Tools}/>
+          <Route path='/books' component={Books}/>
         </div>
         <Footer/>
       </div>

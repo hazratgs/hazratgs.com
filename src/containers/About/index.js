@@ -34,7 +34,8 @@ export default class About extends PureComponent {
             начиная от серверной логики и ее реализации с помощью различных технологий и фреймворков,
             и заканчивая клиентским кодом приложения.
           </p>
-          <p>Сейчас мой основной стек это:</p>
+          <br/>
+          <p styleName='small'>Сейчас мой основной стек это:</p>
           <div styleName='number'>
             <div styleName='item'>
               <img src='/svg/react.svg'/>
@@ -69,7 +70,7 @@ export default class About extends PureComponent {
               <span>Styled components</span>
             </div>
           </div>
-          <p>А так же часто использую в работе:</p>
+          <p styleName='small'>А так же часто использую в работе:</p>
           <div styleName='number'>
             <div styleName='item'>
               <img src='/svg/nodejs.svg'/>
