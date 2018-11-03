@@ -37,77 +37,77 @@ export default class About extends PureComponent {
           <br/>
           <p styleName='small'>Сейчас мой основной стек это:</p>
           <div styleName='number'>
-            <div styleName='item'>
+            <a target='_blank' href='https://reactjs.org/' styleName='item'>
               <img src='/svg/react.svg'/>
               <span>React</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://redux.js.org/' styleName='item'>
               <img src='/svg/redux.svg'/>
               <span>Redux</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.typescriptlang.org/' styleName='item'>
               <img src='/svg/typescript.svg'/>
               <span>TypeScript</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://webpack.js.org/' styleName='item'>
               <img src='/svg/webpack-icon.svg'/>
               <span>Webpack</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://eslint.org/' styleName='item'>
               <img src='/svg/eslint.svg'/>
               <span>ESLint</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://jestjs.io/' styleName='item'>
               <img src='/svg/jest.svg'/>
               <span>Jest</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://postcss.org/' styleName='item'>
               <img src='/svg/postcss.svg'/>
               <span>PostCSS</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.styled-components.com/' styleName='item'>
               <img src='/svg/styled-components.png'/>
-              <span>Styled components</span>
-            </div>
+              <span>Styled</span>
+            </a>
           </div>
           <p styleName='small'>А так же часто использую в работе:</p>
           <div styleName='number'>
-            <div styleName='item'>
+            <a target='_blank' href='https://nodejs.org/en/' styleName='item'>
               <img src='/svg/nodejs.svg'/>
               <span>Node.js</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.mongodb.com/' styleName='item'>
               <img src='/svg/mongodb.svg'/>
               <span>MongoDB</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://gitlab.com/' styleName='item'>
               <img src='/svg/gitlab.svg'/>
               <span>GitLab</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.docker.com/' styleName='item'>
               <img src='/svg/docker.svg'/>
               <span>Docker</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.kernel.org/' styleName='item'>
               <img src='/svg/linux.svg'/>
               <span>Linux</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://nginx.org/ru/' styleName='item'>
               <img src='/svg/nginx.svg'/>
               <span>Nginx</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.chaijs.com/' styleName='item'>
               <img src='/svg/chai.svg'/>
               <span>Chai & Mocha</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='https://www.mysql.com/' styleName='item'>
               <img src='/svg/mysql.svg'/>
               <span>MySQL</span>
-            </div>
-            <div styleName='item'>
+            </a>
+            <a target='_blank' href='http://www.php.net/' styleName='item'>
               <img src='/svg/php.svg'/>
               <span>PHP</span>
-            </div>
+            </a>
           </div>
           <ul>
             <li><p>Опыт проектирования и разработки Single Page Applications (SPA)</p></li>

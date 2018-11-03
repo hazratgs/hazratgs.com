@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   min-height: 100vh;
   background-color: #fff;
   transition: background-color .3s ease;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
 `
 
 const Title = styled.h1`
@@ -18,6 +22,21 @@ const Title = styled.h1`
   font-size: 36px;
   font-weight: 400;
   max-width: 740px;
+
+  span {
+    color: red;
+    font-size: 11px;
+    font-weight: 300;
+    position: relative;
+    top: -22px;
+    left: 2px;
+    font-family: 'gerbera';
+  }
+
+  @media (max-width: 768px) {
+    font-size: 29px;
+    margin: 5px 0;
+  }
 `
 
 const Description = styled.p`
@@ -28,6 +47,11 @@ const Description = styled.p`
   min-height: 20px;
   font-family: 'gerbera';
   font-weight: 300;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
 `
 
 const Content = styled.div`
@@ -38,6 +62,17 @@ const Content = styled.div`
 const Item = styled.div`
   display: flex;
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
 `
 
 const Book = styled.div`
@@ -47,6 +82,11 @@ const Book = styled.div`
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 72px;
+    margin-right: 20px;
   }
 `
 
@@ -59,11 +99,26 @@ const Author = styled.span`
   font-family: 'gerbera';
   color: #999;
   font-size: 14px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `
 
 const BookTitle = styled.h2`
   font-family: 'gerbera';
   line-height: 28px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0;
+
+    strong {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
 `
 
 const Label = styled.span`
@@ -77,11 +132,22 @@ const Label = styled.span`
   line-height: 12px;
   border: 1px solid #005ea5;
   color: #005ea5;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    font-size: 10px;
+    padding: 3px 3px 2px;
+  }
 `
 
 const BookDescription = styled.p`
   font-family: 'gerbera';
   line-height: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `
 
 const Ball = styled.div`
@@ -107,6 +173,13 @@ const BookAudio = styled.div`
   svg {
     fill: #999!important;
   }
+
+  @media (max-width: 768px) {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 `
 
 @connect(
@@ -124,7 +197,7 @@ export default class Books extends PureComponent {
           <Info>
             <Author>{item.author}</Author>
             <BookTitle>
-              <span dangerouslySetInnerHTML={{ __html: item.title }}/>{' '}
+              <strong dangerouslySetInnerHTML={{ __html: item.title }}/>{' '}
               <Label>{item.category}</Label>
             </BookTitle>
             <BookDescription dangerouslySetInnerHTML={{ __html: item.review }}/>
@@ -141,7 +214,7 @@ export default class Books extends PureComponent {
 
     return (
       <Wrapper>
-        <Title>Книги</Title>
+        <Title>Книги<span>beta</span></Title>
         <Description>
           Собираю список прочитанных/прослушанных мною книг, делюсь впечатлиниями и оцениваю, иногда даже настоятельно рекомендую прочитать/послушать!
         </Description>

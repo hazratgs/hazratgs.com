@@ -74,20 +74,34 @@
     }
 
     .number {
-      padding: 10px 0 0 0px;
       box-sizing: border-box;
       display: flex;
       max-width: 880px;
       flex-wrap: wrap;
+      margin-top: -5px;
+      margin-bottom: 25px;
 
       .item {
-        margin-bottom: 50px;
         width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        aligin-items: center;
+        flex-direction: column;
+        border-radius: 8px;
+        transition: all .3s ease;
+        cursor: pointer;
+        color: #005ea5;
+        text-decoration: none;
+
+        &:hover {
+          background: rgba(238, 238, 238, 0.5); 
+        }
 
         svg, img {
           height: 24px;
-          margin: auto;
-          margin-bottom: 10px;
+          width: auto;
+          margin: 0 auto 10px;
           display: block;
         }
 
@@ -132,23 +146,6 @@
       p {
         font-size: 15px;
         line-height: 24px;
-      }
-
-      ul {
-        margin: 10px 0 10px 30px;
-
-        li {
-          &:after {
-            position: absolute;
-            left: -30px;
-            top: 10px;
-            content: '';
-            background-color: #000;
-            opacity: 0.15;
-            width: 15px;
-            height: 1px;
-          }
-        }
       }
     }
   }
